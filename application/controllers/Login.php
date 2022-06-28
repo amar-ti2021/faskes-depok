@@ -22,6 +22,11 @@ class login extends CI_Controller
             $this->session->set_userdata('USER', $row);
             redirect(base_url() . 'home');
         } else {
+            $this->session->set_flashdata('pesan', '
+            <div class="alert alert-danger " role="alert">
+                Username atau Password Anda Salah!
+            </div>
+            ');
             redirect(base_url() . 'index.php/login?status=f');
         }
     }
