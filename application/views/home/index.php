@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!-- Google Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 
     <!-- Vendor CSS Files -->
     <link href="<?php echo base_url('dist/vendor/fontawesome-free/css/all.min.css') ?>" rel="stylesheet">
@@ -51,33 +51,19 @@
             <nav id="navbar" class="navbar order-last order-lg-0">
                 <ul>
                     <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
-                    <li><a class="nav-link scrollto" href="#about">About</a></li>
-                    <li><a class="nav-link scrollto" href="#departments">Departments</a></li>
-                    <li><a class="nav-link scrollto" href="#doctors">Doctors</a></li>
-                    <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
-                        <ul>
-                            <li><a href="#">Drop Down 1</a></li>
-                            <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>
-                                <ul>
-                                    <li><a href="#">Deep Drop Down 1</a></li>
-                                    <li><a href="#">Deep Drop Down 2</a></li>
-                                    <li><a href="#">Deep Drop Down 3</a></li>
-                                    <li><a href="#">Deep Drop Down 4</a></li>
-                                    <li><a href="#">Deep Drop Down 5</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="#">Drop Down 2</a></li>
-                            <li><a href="#">Drop Down 3</a></li>
-                            <li><a href="#">Drop Down 4</a></li>
-                        </ul>
-                    </li>
-                    <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+                    <?php if ($this->session->userdata('USERNAME')) { ?>
+                        <li class="dropdown"><a href="#"><span>Selamat Datang, <?= $this->session->userdata('USERNAME'); ?></span> <i class="bi bi-chevron-down"></i></a>
+                            <ul>
+                                <li><a href="login/logout"><span class="d-none d-md-inline">Logout</a></li>
+                            </ul>
+                        </li>
                 </ul>
-                <i class="bi bi-list mobile-nav-toggle"></i>
+            </nav>
+        <?php } else { ?>
+            </ul>
             </nav><!-- .navbar -->
-
-            <a class="appointment-btn scrollto"  href="login"><span class="d-none d-md-inline">Login/Register</a>
-
+            <a class="appointment-btn" href="login"><span class="d-none d-md-inline">Login</a>
+        <?php } ?>
         </div>
     </header><!-- End Header -->
 
@@ -185,7 +171,7 @@
 
                     <div class="col-lg-3 col-md-6">
                         <div class="count-box">
-                        <i class="fa-solid fa-hospital"></i>
+                            <i class="fa-solid fa-hospital"></i>
                             <span data-purecounter-start="0" data-purecounter-end="85" data-purecounter-duration="1" class="purecounter"></span>
                             <p>Puskesmas</p>
                         </div>
@@ -193,7 +179,7 @@
 
                     <div class="col-lg-3 col-md-6 mt-5 mt-md-0">
                         <div class="count-box">
-                        <i class="fa-solid fa-house-chimney-medical"></i>
+                            <i class="fa-solid fa-house-chimney-medical"></i>
                             <span data-purecounter-start="0" data-purecounter-end="18" data-purecounter-duration="1" class="purecounter"></span>
                             <p>Rumah Sakit</p>
                         </div>
@@ -201,7 +187,7 @@
 
                     <div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
                         <div class="count-box">
-                        <i class="fa-solid fa-bed"></i>
+                            <i class="fa-solid fa-bed"></i>
                             <span data-purecounter-start="0" data-purecounter-end="12" data-purecounter-duration="1" class="purecounter"></span>
                             <p>Klinik</p>
                         </div>
@@ -209,7 +195,7 @@
 
                     <div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
                         <div class="count-box">
-                        <i class="fa-solid fa-person-pregnant"></i>
+                            <i class="fa-solid fa-person-pregnant"></i>
                             <span data-purecounter-start="0" data-purecounter-end="150" data-purecounter-duration="1" class="purecounter"></span>
                             <p>Bidan</p>
                         </div>
