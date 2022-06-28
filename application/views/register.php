@@ -18,7 +18,7 @@
 <body class="register-page" style="min-height: 570.781px;">
     <div class="register-box">
         <div class="register-logo">
-            <a href="home"><b>Admin</b>LTE</a>
+            <a href="home"><b>Faskes</b>Depok</a>
         </div>
 
         <div class="card">
