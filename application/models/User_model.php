@@ -18,10 +18,9 @@ class User_model extends CI_Model
     }
 
     public function login($uname,$pass){
-        $sql = "SELECT * FROM user WHERE username=?  and password=MD5(?)";
+        $sql = "SELECT * FROM users WHERE username=?  and password=MD5(?)";
 
         $query = $this->db->query($sql, [$uname,$pass]);
         return $query->row();
     }
 }
-?>
