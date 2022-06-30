@@ -269,8 +269,7 @@
         $.widget.bridge('uibutton', $.ui.button)
         $(document).ready(function() {
             $('#keyword').on('keyup', function() {
-                console.log("<?= base_url('search/') ?>" + $('#keyword').val())
-                $('#faskes-list').load("<?= base_url('home/search/') ?>" + $('#keyword').val())
+                $('#faskes-list').load("<?= base_url('home/search/') ?>" + $('#keyword').val());
             })
 
         })
