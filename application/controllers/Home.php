@@ -9,7 +9,7 @@ class Home extends CI_Controller
         $data = array('faskes' => $this->faskes->getAll());
         $this->load->view('home/index', $data);
     }
-    public function search($keyword)
+    public function search($keyword = " ")
     {
         $this->load->model("Faskes_Model", "faskes");
         $data = array('faskes' => $this->faskes->search($keyword));
