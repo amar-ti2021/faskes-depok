@@ -162,7 +162,7 @@
                     </form>
                 </div>
             </div>
-            <div class="row p-5" id="faskes-list">
+            <div class="row p-5" id="faskes-list" style="min-height:400px">
                 <?php foreach ($faskes as $f) { ?>
                     <div class="col-3">
                         <div class="card">
