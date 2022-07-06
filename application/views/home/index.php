@@ -175,7 +175,7 @@
     <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
       <div class="member">
         <div class="member-img">
-          <img src="<?php echo base_url('dist\img\tim\WhatsApp Image 2022-07-06 at 22.29.47.jpeg') ?>" width="150" height="150" class="img-fluid" alt="">
+          <img src="<?php echo base_url('dist\img\tim\photo-daffa.jpeg') ?>" width="150" height="150" class="img-fluid" alt="">
         </div>
         <div class="member-info">
           <h4>Daffa Bagus Radityo </h4>
