@@ -52,11 +52,13 @@ class Comment_model extends CI_Model
     }
     private function getRating($id, $new_rating)
     {
+
         $this->db->select_sum('nilai_rating_id');
         $this->db->where('faskes_id', $id);
         $query = $this->db->get($this->table)->row();
         $sum = $query->nilai_rating_id + $new_rating;
-        // $sum = (int) $this->db->get($this->table)->result() ;
+
+        $this->db->where('faskes_id', $id);
         $count = $this->db->count_all_results($this->table) + 1;
 
         $average =  $sum / $count;
