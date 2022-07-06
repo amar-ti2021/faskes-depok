@@ -72,6 +72,7 @@
             <nav id="navbar" class="navbar order-last order-lg-0">
                 <ul>
                     <li><a class="nav-link active" href="<?= base_url('/home'); ?>">Home</a></li>
+                    <li><a class="" href="#team">Team</a></li>
                     <?php if ($this->session->userdata('USERNAME')) { ?>
                         <li class="dropdown"><a href="#"><span>Selamat Datang, <?= $this->session->userdata('USERNAME'); ?></span> <i class="bi bi-chevron-down"></i></a>
                             <ul>
@@ -100,7 +101,9 @@
         </div>
     </section><!-- End Hero -->
 
+
     <main id="main">
+
 
 
         <!-- ======= Counts Section ======= -->
@@ -144,6 +147,75 @@
 
             </div>
         </section><!-- End Counts Section -->
+
+        <!-- ======= Team Section ======= -->
+        <section id="team" class="doctors">
+      <div class="container">
+
+        <div class="section-title">
+    <h2>Team Kami</h2>
+    <p>Tim Dalam Pembuatan Website Ini</p>
+  </header>
+
+  <div class="row gy-4">
+
+    <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
+      <div class="member">
+        <div class="member-img">
+          <img src="<?php echo base_url('dist\img\tim\photo-fadil.jpg') ?>"  class="img-fluid" alt="">
+        </div>
+        <div class="member-info">
+          <h4>Muhammad Nur Fadillah </h4>
+          <span>0110221109</span>
+          <p>Saya adalah bagian dari pembuatan website ini sebagai project akhir mata kuliah pemrograman web I 2021.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
+      <div class="member">
+        <div class="member-img">
+          <img src="<?php echo base_url('dist\img\tim\WhatsApp Image 2022-07-06 at 22.29.47.jpeg') ?>" width="150" height="150" class="img-fluid" alt="">
+        </div>
+        <div class="member-info">
+          <h4>Daffa Bagus Radityo </h4>
+          <span>0110221107</span>
+          <p>Saya adalah bagian dari pembuatan website ini sebagai project akhir mata kuliah pemrograman web I 2021.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="300">
+      <div class="member">
+        <div class="member-img">
+          <img src="<?php echo base_url('dist\img\tim\photo-fadil.jpg') ?>" class="img-fluid" alt="">
+        </div>
+        <div class="member-info">
+          <h4>Muhammad Amar Dafi</h4>
+          <span>0110221095</span>
+          <p>Saya adalah bagian dari pembuatan website ini sebagai project akhir mata kuliah pemrograman web I 2021.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="400">
+      <div class="member">
+        <div class="member-img">
+          <img src="<?php echo base_url('dist\img\tim\photo-fadil.jpg') ?>" class="img-fluid" alt="">
+        </div>
+        <div class="member-info">
+          <h4>Putri Aulia Rahmani </h4>
+          <span>0110221103</span>
+          <p>Saya adalah bagian dari pembuatan website ini sebagai project akhir mata kuliah pemrograman web I 2021.</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</div>
+
+</section><!-- End Team Section -->
 
         <section id="search" class="p-0">
             <div class="row">
@@ -259,6 +331,8 @@
     <div id="preloader"></div>
     <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
+
+
     <!-- Vendor JS Files -->
     <script src="<?php echo base_url('dist/vendor/purecounter/purecounter.js') ?>"></script>
     <script src="<?php echo base_url('dist/vendor/bootstrap/js/bootstrap.bundle.min.js') ?>"></script>
@@ -307,6 +381,7 @@
     <script src="<?php echo base_url(); ?>/assets/dist/js/pages/dashboard.js"></script>
     <!-- Template Main JS File -->
     <script src="<?php echo base_url('dist/js/main.js') ?>"></script>
+
 
 </body>
 
