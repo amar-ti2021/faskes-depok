@@ -5,12 +5,12 @@
 			<div class="container-fluid">
 				<div class="row mb-2">
 					<div class="col-sm-6">
-						<h1 class="m-0">Data Dosen</h1>
+						<h1 class="m-0">Kelola Komentar</h1>
 					</div><!-- /.col -->
 					<div class="col-sm-6">
 						<ol class="breadcrumb float-sm-right">
-							<li class="breadcrumb-item"><a href="#">Home</a></li>
-							<li class="breadcrumb-item active">Data Dosen</li>
+							<li class="breadcrumb-item"><a href="<?= base_url('admin/dashboard') ?>">Admin</a></li>
+							<li class="breadcrumb-item active">komentar</li>
 						</ol>
 					</div><!-- /.col -->
 				</div><!-- /.row -->
@@ -23,49 +23,39 @@
 			<div class="container-fluid">
 				<div class="card">
 					<div class="card-header">
-						<h3 class="card-title">Kelola Data Dosen</h3>
+						<h3 class="card-title">Kelola komentar</h3>
 					</div>
 					<!-- /.card-header -->
 					<div class="card-body">
 						<table id="example1" class="table table-bordered table-striped">
-
-							<a href="<?php echo base_url('Dosen/create') ?>" class="btn btn-success mb-3">Tambah Data</a>
-
 							<thead>
 								<tr>
 									<th>No</th>
-									<th>NIP</th>
-									<th>Nama</th>
-									<th>Gender</th>
-									<th>Tempat Lahir</th>
-									<th>Tanggal Lahir</th>
-									<th>Pendidikan Akhir</th>
-									<th>Program Studi</th>
-									<th>Action</th>
+									<th>Tanggal</th>
+									<th>User</th>
+									<th>Faskes</th>
+									<th>Isi</th>
+									<th>Rating</th>
+									<th>action</th>
 								</tr>
 							</thead>
 							<tbody>
-								<?php $nomor = 1;
-								foreach ($list_dsn as $dsn) : ?>
+								<?php $no = 1; ?>
+								<?php foreach ($comments as $comment) : ?>
 									<tr>
-										<td><?= $nomor++; ?></td>
-										<td><?= $dsn->nidn; ?></td>
-										<td><?= $dsn->nama; ?></td>
-										<td><?= $dsn->gender; ?></td>
-										<td><?= $dsn->tmp_lahir; ?></td>
-										<td><?= $dsn->tgl_lahir; ?></td>
-										<td><?= $dsn->pendidikan_akhir; ?></td>
-										<td><?= $dsn->prodi_kode; ?></td>
+										<td> <?= $no++; ?> </td>
+										<td> <?= $comment->tanggal; ?> </td>
+										<td> <?= $comment->username; ?> </td>
+										<td> <?= $comment->faskes; ?> </td>
+										<td> <?= $comment->isi; ?> </td>
+										<td> <?= $comment->rating; ?> </td>
+
 										<td width="300px">
-											<a href="view?id=<?php echo $dsn->nidn ?>" class="btn btn-primary mb-1">View</a> |
-											<a href="edit?id=<?php echo $dsn->nidn ?>" class="btn btn-primary mb-1">Update</a> |
-											<a href="delete?id=<?php echo $dsn->nidn ?>" onclick="return confirm('Apakah Anda Yakin');" class="btn btn-primary mb-1">Hapus</a>
+											<a href="<?= base_url('admin'); ?>/comments/delete?id=<?php echo $comment->id ?>" onclick="return confirm('Apakah Anda Yakin'); " class="btn btn-danger mb-1">Hapus</a>
 										</td>
 									</tr>
 								<?php endforeach; ?>
 							</tbody>
-						</table>
-						</tbody>
 						</table>
 					</div>
 					<!-- /.card-body -->
@@ -86,10 +76,7 @@
 		</div>
 	</footer>
 
-
 	<!-- Control Sidebar -->
 	<aside class="control-sidebar control-sidebar-dark">
 		<!-- Control sidebar content goes here -->
 	</aside>
-	<!-- /.control-sidebar -->
-	</div>

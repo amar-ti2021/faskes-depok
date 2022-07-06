@@ -1,11 +1,11 @@
 <?php
-if(!$this->session->has_userdata('USERNAME')){
-  redirect(base_url() .'index.php/home');
+if (!$this->session->userdata('ROLE') == 'administrator') {
+  redirect(base_url() . 'login');
 }
 ?>
 <!DOCTYPE html>
 <html lang="en">
-<title>AdminLTE 3 | Blank Page</title>
+<title>FaskesDepok | Admin</title>
 
 <head>
   <!-- Google Font: Source Sans Pro -->

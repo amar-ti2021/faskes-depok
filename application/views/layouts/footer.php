@@ -48,6 +48,12 @@
   <script src="<?php echo base_url(); ?>/assets/dist/js/demo.js"></script>
   <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
   <script src="<?php echo base_url(); ?>/assets/dist/js/pages/dashboard.js"></script>
+  <script src="<?php echo base_url(); ?>/assets/plugins/bs-custom-file-input/bs-custom-file-input.min.js"></script>
+  <script>
+    $(function() {
+      bsCustomFileInput.init();
+    });
+  </script>
   </body>
 
   </html>

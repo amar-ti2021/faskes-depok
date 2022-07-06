@@ -1,19 +1,15 @@
 <?php
 defined('BASEPATH') or exit('No direct script access allowed');
 
-class Dosen extends CI_Controller
+class Dashboard extends CI_Controller
 {
     public function index()
     {
-        $this->load->model('Dosen_Model', 'dsn');
-        $list_dsn = $this->dsn->getAll();
-        $data["list_dsn"] = $list_dsn;
-
 
         $this->load->view('layouts/header');
         $this->load->view('layouts/navbar');
-        $this->load->view('layouts/sidebar');
-        $this->load->view('dosen/index', $data);
+        $this->load->view('layouts/sidebar', ['active' => 'dashboard']);
+        $this->load->view('admin/dashboard');
         $this->load->view('layouts/footer');
     }
 

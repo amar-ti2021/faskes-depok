@@ -62,20 +62,23 @@
 <body>
 
     <!-- ======= Header ======= -->
-    <header id="header" class="fixed-top" style="top:0;">
+    <header id="header" class="sticky-top" style="top:0;">
         <div class="container d-flex align-items-center">
 
-            <h1 class="logo me-auto"><a href="index.html">Faskes-Depok</a></h1>
+            <h1 class="logo me-auto"><a href="<?= base_url('/home'); ?>">Faskes-Depok</a></h1>
             <!-- Uncomment below if you prefer to use an image logo -->
             <!-- <a href="index.html" class="logo me-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
 
             <nav id="navbar" class="navbar order-last order-lg-0">
                 <ul>
-                    <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+                    <li><a class="nav-link active" href="<?= base_url('/home'); ?>">Home</a></li>
                     <?php if ($this->session->userdata('USERNAME')) { ?>
                         <li class="dropdown"><a href="#"><span>Selamat Datang, <?= $this->session->userdata('USERNAME'); ?></span> <i class="bi bi-chevron-down"></i></a>
                             <ul>
-                                <li><a href="login/logout"><span class="d-none d-md-inline">Logout</a></li>
+                                <?php if ($this->session->userdata('ROLE') == 'administrator') { ?>
+                                    <li><a href="<?= base_url('admin/dashboard/'); ?>"><span class="d-none d-md-inline">Admin Dashboard</a></li>
+                                <?php } ?>
+                                <li><a href="<?= base_url('login/logout'); ?>"><span class="d-none d-md-inline">Logout</a></li>
                             </ul>
                         </li>
                 </ul>
@@ -109,7 +112,7 @@
                     <div class="col-lg-3 col-md-6">
                         <div class="count-box">
                             <i class="fa-solid fa-hospital"></i>
-                            <span data-purecounter-start="0" data-purecounter-end="85" data-purecounter-duration="1" class="purecounter"></span>
+                            <span data-purecounter-start="0" data-purecounter-end="<?= $jumlah['puskesmas']; ?>" data-purecounter-duration="1" class="purecounter"></span>
                             <p>Puskesmas</p>
                         </div>
                     </div>
@@ -117,7 +120,7 @@
                     <div class="col-lg-3 col-md-6 mt-5 mt-md-0">
                         <div class="count-box">
                             <i class="fa-solid fa-house-chimney-medical"></i>
-                            <span data-purecounter-start="0" data-purecounter-end="18" data-purecounter-duration="1" class="purecounter"></span>
+                            <span data-purecounter-start="0" data-purecounter-end="<?= $jumlah['rumah_sakit']; ?>" data-purecounter-duration="1" class="purecounter"></span>
                             <p>Rumah Sakit</p>
                         </div>
                     </div>
@@ -125,7 +128,7 @@
                     <div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
                         <div class="count-box">
                             <i class="fa-solid fa-bed"></i>
-                            <span data-purecounter-start="0" data-purecounter-end="12" data-purecounter-duration="1" class="purecounter"></span>
+                            <span data-purecounter-start="0" data-purecounter-end="<?= $jumlah['klinik']; ?>" data-purecounter-duration=" 1" class="purecounter"></span>
                             <p>Klinik</p>
                         </div>
                     </div>
@@ -133,7 +136,7 @@
                     <div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
                         <div class="count-box">
                             <i class="fa-solid fa-person-pregnant"></i>
-                            <span data-purecounter-start="0" data-purecounter-end="150" data-purecounter-duration="1" class="purecounter"></span>
+                            <span data-purecounter-start="0" data-purecounter-end="<?= $jumlah['bidan']; ?>" data-purecounter-duration="1" class="purecounter"></span>
                             <p>Bidan</p>
                         </div>
                     </div>
@@ -164,13 +167,15 @@
             </div>
             <div class="row p-5" id="faskes-list" style="min-height:400px">
                 <?php foreach ($faskes as $f) { ?>
-                    <div class="col-3">
-                        <div class="card">
-                            <img class="bd-placeholder-img card-img-top" src="<?= $f->foto1; ?>">
+                    <div class="col-3 mb-3">
+                        <div class="card h-100">
+                            <img class="bd-placeholder-img card-img-top" src="<?= base_url('assets/foto/') . $f->foto1; ?>" style="height: 200px;">
                             <div class="card-body">
                                 <h5 class="card-title"><?= $f->nama; ?></h5>
                                 <p class="card-text"><?= $f->alamat; ?></p>
-                                <a href="#" class="btn btn-primary">Detail</a>
+                            </div>
+                            <div class="card-footer">
+                                <a href="<?= base_url('home/detail?id=') . $f->id; ?>" class="btn btn-primary">Detail</a>
                             </div>
                         </div>
                     </div>

@@ -17,9 +17,13 @@ class login extends CI_Controller
 
         $row = $this->user->login($_username, $_password);
         if (isset($row)) {
+            $this->session->set_userdata('ID', $row->id);
             $this->session->set_userdata('USERNAME', $row->username);
             $this->session->set_userdata('ROLE', $row->role);
             $this->session->set_userdata('USER', $row);
+            if ($this->session->userdata('ROLE') == 'administrator') {
+                redirect(base_url('admin/dashboard'));
+            }
             redirect(base_url() . 'home');
         } else {
             $this->session->set_flashdata('pesan', '

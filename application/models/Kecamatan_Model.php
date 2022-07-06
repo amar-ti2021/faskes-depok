@@ -1,8 +1,9 @@
 <?php
-class User_model extends CI_Model
+class Kecamatan_Model extends CI_Model
 {
 
-    private $table = "users";
+    // Buat Struktur data
+    private $table = "kecamatan";
 
     public function getAll()
     {
@@ -16,6 +17,13 @@ class User_model extends CI_Model
         $query = $this->db->get($this->table);
         return $query->row();
     }
+
+    public function save($data)
+    {
+        //insert into
+        $this->db->insert($this->table, $data);
+    }
+
     public function update($id, $data)
     {
         $this->db->where('id', $id);
@@ -27,12 +35,5 @@ class User_model extends CI_Model
         $this->db->where('id', $id);
         $query = $this->db->delete($this->table);
         return $query;
-    }
-    public function login($uname, $pass)
-    {
-        $sql = "SELECT * FROM users WHERE username=?  and password=MD5(?)";
-
-        $query = $this->db->query($sql, [$uname, $pass]);
-        return $query->row();
     }
 }
