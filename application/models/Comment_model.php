@@ -57,7 +57,8 @@ class Comment_model extends CI_Model
         $query = $this->db->get($this->table)->row();
         $sum = $query->nilai_rating_id + $new_rating;
         // $sum = (int) $this->db->get($this->table)->result() ;
-        $count = $this->db->count_all_results($this->table);
+        $count = $this->db->count_all_results($this->table) + 1;
+
         $average =  $sum / $count;
         return  number_format((float)$average, 1, '.', '');
         // return $average;
