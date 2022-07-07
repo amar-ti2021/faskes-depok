@@ -163,9 +163,9 @@
     <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
       <div class="member">
         <div class="member-img">
-          <img src="<?php echo base_url('dist\img\tim\photo-fadil.jpg') ?>"  class="img-fluid" alt="">
+          <img src="<?php echo base_url('dist\img\tim\photo-fadil.jpg') ?>"  width="100" height="150" class="img-fluid" alt="">
         </div>
-        <div class="member-info">
+        <div class="member-info"><br>
           <h4>Muhammad Nur Fadillah </h4>
           <span>0110221109</span>
           <p>Saya adalah bagian dari pembuatan website ini sebagai project akhir mata kuliah pemrograman web I 2021.</p>
@@ -178,7 +178,7 @@
         <div class="member-img">
           <img src="<?php echo base_url('dist\img\tim\photo-daffa.jpeg') ?>" width="150" height="150" class="img-fluid" alt="">
         </div>
-        <div class="member-info">
+        <div class="member-info"><br>
           <h4>Daffa Bagus Radityo </h4>
           <span>0110221107</span>
           <p>Saya adalah bagian dari pembuatan website ini sebagai project akhir mata kuliah pemrograman web I 2021.</p>
@@ -189,9 +189,9 @@
     <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="300">
       <div class="member">
         <div class="member-img">
-          <img src="<?php echo base_url('dist\img\tim\photo-fadil.jpg') ?>" class="img-fluid" alt="">
+          <img src="<?php echo base_url('dist\img\tim\photo-amar.jpeg') ?>" width="120" height="150" class="img-fluid" alt="">
         </div>
-        <div class="member-info">
+        <div class="member-info"><br>
           <h4>Muhammad Amar Dafi</h4>
           <span>0110221095</span>
           <p>Saya adalah bagian dari pembuatan website ini sebagai project akhir mata kuliah pemrograman web I 2021.</p>
@@ -202,7 +202,7 @@
     <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="400">
       <div class="member">
         <div class="member-img">
-          <img src="<?php echo base_url('dist\img\tim\photo-fadil.jpg') ?>" class="img-fluid" alt="">
+          <img src="<?php echo base_url('dist\img\tim\photo-putri.jpg') ?>" width="110" height="150" class="img-fluid" alt="">
         </div>
         <div class="member-info">
           <h4>Putri Aulia Rahmani </h4>
