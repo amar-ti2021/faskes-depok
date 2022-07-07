@@ -20,7 +20,7 @@ if (!$this->session->has_userdata('USERNAME')) {
     <!-- Theme style -->
     <link rel="stylesheet" href="<?= base_url('assets/'); ?>dist/css/adminlte.min.css">
     <!-- Favicons -->
-    <link href="<?php echo base_url('dist/img/favicon.png') ?>" rel="icon">
+    <link href="<?php echo base_url('dist/img/Logo-Faskes.png') ?>" rel="icon">
     <link href="<?php echo base_url('dist/img/apple-touch-icon.png') ?>" rel="apple-touch-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
