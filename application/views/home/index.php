@@ -204,7 +204,7 @@
         <div class="member-img">
           <img src="<?php echo base_url('dist\img\tim\photo-putri.jpg') ?>" width="110" height="150" class="img-fluid" alt="">
         </div>
-        <div class="member-info">
+        <div class="member-info"><br>
           <h4>Putri Aulia Rahmani </h4>
           <span>0110221103</span>
           <p>Saya adalah bagian dari pembuatan website ini sebagai project akhir mata kuliah pemrograman web I 2021.</p>
