@@ -168,7 +168,7 @@
         <div class="member-info"><br>
           <h4>Muhammad Nur Fadillah </h4>
           <span>0110221109</span>
-          <p>Saya adalah bagian dari pembuatan website ini sebagai project akhir mata kuliah pemrograman web I 2021.</p>
+          <p>Saya adalah bagian dari pembuatan website ini sebagai project akhir mata kuliah pemrograman web II 2022.</p>
         </div>
       </div>
     </div>
@@ -181,7 +181,7 @@
         <div class="member-info"><br>
           <h4>Daffa Bagus Radityo </h4>
           <span>0110221107</span>
-          <p>Saya adalah bagian dari pembuatan website ini sebagai project akhir mata kuliah pemrograman web I 2021.</p>
+          <p>Saya adalah bagian dari pembuatan website ini sebagai project akhir mata kuliah pemrograman web II 2022.</p>
         </div>
       </div>
     </div>
@@ -194,7 +194,7 @@
         <div class="member-info"><br>
           <h4>Muhammad Amar Dafi</h4>
           <span>0110221095</span>
-          <p>Saya adalah bagian dari pembuatan website ini sebagai project akhir mata kuliah pemrograman web I 2021.</p>
+          <p>Saya adalah bagian dari pembuatan website ini sebagai project akhir mata kuliah pemrograman web II 2022.</p>
         </div>
       </div>
     </div>
@@ -207,7 +207,7 @@
         <div class="member-info"><br>
           <h4>Putri Aulia Rahmani </h4>
           <span>0110221103</span>
-          <p>Saya adalah bagian dari pembuatan website ini sebagai project akhir mata kuliah pemrograman web I 2021.</p>
+          <p>Saya adalah bagian dari pembuatan website ini sebagai project akhir mata kuliah pemrograman web II 2022.</p>
         </div>
       </div>
     </div>
