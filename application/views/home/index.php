@@ -88,7 +88,7 @@
         <?php } else { ?>
             </ul>
             </nav><!-- .navbar -->
-            <a class="appointment-btn" href="login"><span class="d-none d-md-inline">Login</a>
+            <a class="appointment-btn" href="<?= base_url('index.php/login'); ?>"><span class="d-none d-md-inline">Login</a>
         <?php } ?>
         </div>
     </header><!-- End Header -->
