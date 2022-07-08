@@ -6,22 +6,22 @@
         <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
       </li>
       <li class="nav-item d-none d-sm-inline-block">
-        <a href="<?= base_url('admin/dashboard') ?>" class="nav-link">Dashboard</a>
+        <a href="<?= base_url('index.php/admin/dashboard') ?>" class="nav-link">Dashboard</a>
       </li>
       <li class="nav-item d-none d-sm-inline-block">
-        <a href="<?= base_url('admin/faskes') ?>" class="nav-link">Faskes</a>
+        <a href="<?= base_url('index.php/admin/faskes') ?>" class="nav-link">Faskes</a>
       </li>
       <li class="nav-item d-none d-sm-inline-block">
-        <a href="<?= base_url('admin/kecamatan') ?>" class="nav-link">Kecamatan</a>
+        <a href="<?= base_url('index.php/admin/kecamatan') ?>" class="nav-link">Kecamatan</a>
       </li>
       <li class="nav-item d-none d-sm-inline-block">
-        <a href="<?= base_url('admin/jenis_faskes') ?>" class="nav-link">Jenis Faskes</a>
+        <a href="<?= base_url('index.php/admin/jenis_faskes') ?>" class="nav-link">Jenis Faskes</a>
       </li>
       <li class="nav-item d-none d-sm-inline-block">
-        <a href="<?= base_url('admin/users') ?>" class="nav-link">Users</a>
+        <a href="<?= base_url('index.php/admin/users') ?>" class="nav-link">Users</a>
       </li>
       <li class="nav-item d-none d-sm-inline-block">
-        <a href="<?= base_url('admin/comments') ?>" class="nav-link">Comments</a>
+        <a href="<?= base_url('index.php/admin/comments') ?>" class="nav-link">Comments</a>
       </li>
     </ul>
 
