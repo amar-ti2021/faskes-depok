@@ -78,7 +78,7 @@
                         <li class="dropdown"><a href="#"><span>Selamat Datang, <?= $this->session->userdata('USERNAME'); ?></span> <i class="bi bi-chevron-down"></i></a>
                             <ul>
                                 <?php if ($this->session->userdata('ROLE') == 'administrator') { ?>
-                                    <li><a href="<?= base_url('index.php/admin/dashboard/'); ?>"><span class="d-none d-md-inline">Admin Dashboard</a></li>
+                                    <li><a href="<?= base_url('index.php/admin/dashboard/'); ?>">Admin Dashboard</a></li>
                                 <?php } ?>
                                 <li><a href="<?= base_url('index.php/login/logout'); ?>">Logout</a></li>
                             </ul>
