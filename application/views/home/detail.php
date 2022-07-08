@@ -137,7 +137,7 @@
                             <div class="col-10">
                                 <h1>Komentar :</h1>
                             </div>
-                            <div class="col-2">
+                            <div class="col-md-10">
                                 <a href="<?= base_url('index.php/home/comment?id=') . $faskes->id; ?>" class="btn btn-sm btn-primary btn-block">Komentar Baru</a>
                             </div>
                             <?php foreach ($comment as $c) { ?>
