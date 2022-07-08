@@ -46,8 +46,8 @@
 	                                    <td> <?= $k->nama; ?> </td>
 
 	                                    <td width="300px">
-	                                        <a href="<?= base_url('admin'); ?>/kecamatan/edit?id=<?php echo $k->id ?>" class="btn btn-warning mb-1">Update</a> |
-	                                        <a href="<?= base_url('admin'); ?>/kecamatan/delete?id=<?php echo $k->id ?>" onclick="return confirm('Apakah Anda Yakin'); " class="btn btn-danger mb-1">Hapus</a>
+	                                        <a href="<?= base_url('index.php/admin'); ?>/kecamatan/edit?id=<?php echo $k->id ?>" class="btn btn-warning mb-1">Update</a> |
+	                                        <a href="<?= base_url('index.php/admin'); ?>/kecamatan/delete?id=<?php echo $k->id ?>" onclick="return confirm('Apakah Anda Yakin'); " class="btn btn-danger mb-1">Hapus</a>
 	                                    </td>
 	                                </tr>
 	                            <?php endforeach; ?>
