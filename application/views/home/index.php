@@ -85,6 +85,7 @@
                         </li>
                 </ul>
                 <i class="bi bi-list mobile-nav-toggle"></i>
+            </nav>
         <?php } else { ?>
             </ul>
             </nav><!-- .navbar -->
