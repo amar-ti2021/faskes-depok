@@ -31,7 +31,7 @@
                         <div class="icon">
                             <i class="fas fa-house"></i>
                         </div>
-                        <a href="<?= base_url('home'); ?>" class="small-box-footer">Ke halaman depan <i class="fas fa-arrow-circle-right"></i></a>
+                        <a href="<?= base_url('index.php/home'); ?>" class="small-box-footer">Ke halaman depan <i class="fas fa-arrow-circle-right"></i></a>
                     </div>
                 </div>
                 <!-- ./col -->
@@ -44,7 +44,7 @@
                         <div class="icon">
                             <i class="fas fa-hospital"></i>
                         </div>
-                        <a href="<?= base_url('admin/faskes'); ?>" class="small-box-footer">Kelola fasilitas kesehatan <i class="fas fa-arrow-circle-right"></i></a>
+                        <a href="<?= base_url('index.php/admin/faskes'); ?>" class="small-box-footer">Kelola fasilitas kesehatan <i class="fas fa-arrow-circle-right"></i></a>
                     </div>
                 </div>
                 <!-- ./col -->
@@ -57,7 +57,7 @@
                         <div class="icon">
                             <i class="fas fa-location-dot"></i>
                         </div>
-                        <a href="<?= base_url('admin/kecamatan'); ?>" class="small-box-footer">Kelola Kecamatan <i class="fas fa-arrow-circle-right"></i></a>
+                        <a href="<?= base_url('index.php/admin/kecamatan'); ?>" class="small-box-footer">Kelola Kecamatan <i class="fas fa-arrow-circle-right"></i></a>
                     </div>
                 </div>
                 <div class="col-lg-4 col-6 ">
@@ -69,7 +69,7 @@
                         <div class="icon">
                             <i class="fas fa-hospital-user"></i>
                         </div>
-                        <a href="<?= base_url('admin/jenis_faskes'); ?>" class="small-box-footer">Kelola Jenis Faskes <i class="fas fa-arrow-circle-right"></i></a>
+                        <a href="<?= base_url('index.php/admin/jenis_faskes'); ?>" class="small-box-footer">Kelola Jenis Faskes <i class="fas fa-arrow-circle-right"></i></a>
                     </div>
                 </div>
                 <div class="col-lg-4 col-6 ">
@@ -81,7 +81,7 @@
                         <div class="icon">
                             <i class="fas fa-users"></i>
                         </div>
-                        <a href="<?= base_url('admin/users'); ?>" class="small-box-footer">Kelola user <i class="fas fa-arrow-circle-right"></i></a>
+                        <a href="<?= base_url('index.php/admin/users'); ?>" class="small-box-footer">Kelola user <i class="fas fa-arrow-circle-right"></i></a>
                     </div>
                 </div>
                 <div class="col-lg-4 col-6 ">
@@ -93,7 +93,7 @@
                         <div class="icon">
                             <i class="fas fa-message"></i>
                         </div>
-                        <a href="<?= base_url('admin/comments'); ?>" class="small-box-footer">Kelola komentar <i class="fas fa-arrow-circle-right"></i></a>
+                        <a href="<?= base_url('index.php/admin/comments'); ?>" class="small-box-footer">Kelola komentar <i class="fas fa-arrow-circle-right"></i></a>
                     </div>
                 </div>
             </div>

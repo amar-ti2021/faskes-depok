@@ -24,7 +24,7 @@ class Home extends CI_Controller
         if (!$data['faskes']) {
             echo '<h3 class="text-center"> Fasilitas Tidak Ditemukan </h3>';
         }
-        $this->load->view('home/search', $data);
+        $this->load->view('index.php/home/search', $data);
     }
     public function detail()
     {
@@ -33,14 +33,14 @@ class Home extends CI_Controller
         $this->load->model('Comment_model', 'comment');
         $data['faskes'] = $this->faskes->findById($id);
         $data['comment'] = $this->comment->findComment($id);
-        $this->load->view('home/detail', $data);
+        $this->load->view('index.php/home/detail', $data);
     }
     public function comment()
     {
         $id = $this->input->get('id');
         $this->load->model('Faskes_Model', 'faskes');
         $data['faskes'] = $this->faskes->findById($id);
-        $this->load->view('home/comment', $data);
+        $this->load->view('index.php/home/comment', $data);
     }
     public function addComment()
     {
@@ -56,6 +56,6 @@ class Home extends CI_Controller
         $this->load->model('Comment_model', 'comment');
         $this->comment->setRating($id_faskes, $rating);
         $this->comment->save($data);
-        return redirect(base_url('home/detail?id=') . $id_faskes);
+        return redirect(base_url('index.php/home/detail?id=') . $id_faskes);
     }
 }

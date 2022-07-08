@@ -35,14 +35,14 @@
       <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
         <!-- Add icons to the links using the .nav-icon class with font-awesome or any other icon font library -->
         <li class="nav-item">
-          <a href="<?= base_url('home'); ?>" class="nav-link {{ ($active === 'accounts')? " active" : "" }}">
+          <a href="<?= base_url('index.php/home'); ?>" class="nav-link {{ ($active === 'accounts')? " active" : "" }}">
             <i class="fas fa-house nav-icon"></i>
             <p>Halaman Depan</p>
           </a>
         </li>
         <div class="dropdown-divider"></div>
         <li class="nav-item">
-          <a href="<?= base_url('admin/dashboard') ?>" class="nav-link <?= ($active == 'dashboard') ? "active" : "" ?>">
+          <a href="<?= base_url('index.php/admin/dashboard') ?>" class="nav-link <?= ($active == 'dashboard') ? "active" : "" ?>">
             <i class="nav-icon fas fa-tachometer-alt"></i>
             <p>
               Dashboard
@@ -50,31 +50,31 @@
           </a>
         </li>
         <li class="nav-item">
-          <a href="<?= base_url('admin/faskes') ?>" class="nav-link <?= ($active === 'faskes') ? "active" : "" ?>">
+          <a href="<?= base_url('index.php/admin/faskes') ?>" class="nav-link <?= ($active === 'faskes') ? "active" : "" ?>">
             <i class="fas fa-hospital nav-icon"></i>
             <p>Faskes</p>
           </a>
         </li>
         <li class="nav-item">
-          <a href="<?= base_url('admin/kecamatan') ?>" class="nav-link <?= ($active === 'kecamatan') ? "active" : "" ?>">
+          <a href="<?= base_url('index.php/admin/kecamatan') ?>" class="nav-link <?= ($active === 'kecamatan') ? "active" : "" ?>">
             <i class="fas fa-location-dot nav-icon"></i>
             <p>Kecamatan</p>
           </a>
         </li>
         <li class="nav-item">
-          <a href="<?= base_url('admin/jenis_faskes') ?>" class="nav-link  <?= ($active === 'jenis_faskes') ? "active" : "" ?>">
+          <a href="<?= base_url('index.php/admin/jenis_faskes') ?>" class="nav-link  <?= ($active === 'jenis_faskes') ? "active" : "" ?>">
             <i class="fas fa-hospital-user nav-icon"></i>
             <p>Jenis Faskes</p>
           </a>
         </li>
         <li class="nav-item">
-          <a href="<?= base_url('admin/users') ?>" class="nav-link <?= ($active === 'users') ? "active" : "" ?>">
+          <a href="<?= base_url('index.php/admin/users') ?>" class="nav-link <?= ($active === 'users') ? "active" : "" ?>">
             <i class="fas fa-users nav-icon"></i>
             <p>Users</p>
           </a>
         </li>
         <li class="nav-item">
-          <a href="<?= base_url('admin/comments') ?>" class="nav-link  <?= ($active === 'comments') ? "active" : "" ?>">
+          <a href="<?= base_url('index.php/admin/comments') ?>" class="nav-link  <?= ($active === 'comments') ? "active" : "" ?>">
             <i class="fas fa-message nav-icon"></i>
             <p>Comments</p>
           </a>

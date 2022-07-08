@@ -46,14 +46,14 @@
 
             <nav id="navbar" class="navbar order-last order-lg-0">
                 <ul>
-                    <li><a class="nav-link active" href="<?= base_url('/home'); ?>">Home</a></li>
+                    <li><a class="nav-link active" href="<?= base_url('index.php/home'); ?>">Home</a></li>
                     <?php if ($this->session->userdata('USERNAME')) { ?>
                         <li class="dropdown"><a href="#"><span>Selamat Datang, <?= $this->session->userdata('USERNAME'); ?></span> <i class="bi bi-chevron-down"></i></a>
                             <ul>
                                 <?php if ($this->session->userdata('ROLE') == 'administrator') { ?>
-                                    <li><a href="<?= base_url('admin/dashboard/'); ?>"><span class="d-none d-md-inline">Admin Dashboard</a></li>
+                                    <li><a href="<?= base_url('index.php/admin/dashboard/'); ?>"><span class="d-none d-md-inline">Admin Dashboard</a></li>
                                 <?php } ?>
-                                <li><a href="<?= base_url('login/logout'); ?>"><span class="d-none d-md-inline">Logout</a></li>
+                                <li><a href="<?= base_url('index.php/login/logout'); ?>"><span class="d-none d-md-inline">Logout</a></li>
                             </ul>
                         </li>
                 </ul>
