@@ -1,6 +1,6 @@
 <?php
 if (!$this->session->has_userdata('USERNAME')) {
-    redirect(base_url() . 'login');
+    redirect(base_url() . 'index.php/login');
 }
 ?>
 <!DOCTYPE html>
