@@ -57,12 +57,12 @@
         </a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="<?= base_url('home') ?>" role="button">
+        <a class="nav-link" href="<?= base_url('index.php/home') ?>" role="button">
           <i class="fas fa-house"></i>
         </a>
       </li>
       <li class="nav-item">
-        <a href="<?php echo base_url('Login/logout') ?>" class="nav-link" onclick="logout()">
+        <a href="<?php echo base_url('index.php/Login/logout') ?>" class="nav-link" onclick="logout()">
           <i class="fa fa-sign-out"></i>
         </a>
       </li>
