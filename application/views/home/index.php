@@ -330,7 +330,7 @@
             </div>
         </div>
     </footer>End Footer -->
-
+<hr>
     <footer id="footer">
 
     <div class="footer-top">
