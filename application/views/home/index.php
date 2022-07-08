@@ -88,8 +88,9 @@
             </nav>
         <?php } else { ?>
             </ul>
+            <i class="bi bi-list mobile-nav-toggle"></i>
             </nav><!-- .navbar -->
-            <a class="appointment-btn" href="<?= base_url('index.php/login'); ?>"><span class="d-none d-md-inline">Login</a>
+            <a class="appointment-btn" href="<?= base_url('index.php/login'); ?>">Login</a>
         <?php } ?>
         </div>
     </header>
