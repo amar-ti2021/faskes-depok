@@ -80,7 +80,7 @@
                                 <?php if ($this->session->userdata('ROLE') == 'administrator') { ?>
                                     <li><a href="<?= base_url('admin/dashboard/'); ?>"><span class="d-none d-md-inline">Admin Dashboard</a></li>
                                 <?php } ?>
-                                <li><a href="<?= base_url('login/logout'); ?>"><span class="d-none d-md-inline">Logout</a></li>
+                                <li><a href="<?= base_url('index.php/login/logout'); ?>"><span class="d-none d-md-inline">Logout</a></li>
                             </ul>
                         </li>
                 </ul>
