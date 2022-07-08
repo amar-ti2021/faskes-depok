@@ -47,6 +47,6 @@ class Comments extends CI_Controller
         $_id = $this->input->get('id');
         $this->load->model('comment_model', 'comment');
         $this->comment->delete($_id);
-        redirect(base_url('admin/comments'));
+        redirect(base_url('index.php/admin/comments'));
     }
 }

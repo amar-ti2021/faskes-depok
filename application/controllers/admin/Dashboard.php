@@ -61,7 +61,7 @@ class Dashboard extends CI_Controller
         $data_dsn[] = $_gender; // ? 3
         $data_dsn[] = $_tmp_lahir; // ? 4
         $data_dsn[] = $_tgl_lahir; // ? 5
-        $data_dsn[] = $_pendidikan; // ? 
+        $data_dsn[] = $_pendidikan; // ?
         $data_dsn[] = $_prodi; // ? 8
 
         if (isset($_idedit)) {
@@ -71,7 +71,7 @@ class Dashboard extends CI_Controller
             $this->dosen->save($data_dsn);
         }
 
-        redirect(base_url() . '/Dosen/view?id=' . $_nidn, 'refresh');
+        redirect(base_url() . 'index.php/Dosen/view?id=' . $_nidn, 'refresh');
     }
 
     public function edit()
@@ -93,6 +93,6 @@ class Dashboard extends CI_Controller
         $_id = $this->input->get('id');
         $this->load->model('Dosen_Model', 'dosen');
         $this->dosen->deleteDosen($_id);
-        redirect(base_url('Dosen/index'));
+        redirect(base_url('index.php/Dosen/index'));
     }
 }

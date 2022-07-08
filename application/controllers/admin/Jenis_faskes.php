@@ -37,7 +37,7 @@ class Jenis_faskes extends CI_Controller
         } else {
             $this->jenis_faskes->save($data);
         }
-        return redirect(base_url('admin/jenis_faskes/'));
+        return redirect(base_url('index.php/admin/jenis_faskes/'));
     }
 
     public function edit()
@@ -61,6 +61,6 @@ class Jenis_faskes extends CI_Controller
         $_id = $this->input->get('id');
         $this->load->model('Jenis_Faskes_Model', 'jenis_faskes');
         $this->jenis_faskes->delete($_id);
-        redirect(base_url('admin/jenis_faskes'));
+        redirect(base_url('index/php/admin/jenis_faskes'));
     }
 }

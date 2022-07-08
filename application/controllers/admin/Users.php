@@ -24,7 +24,7 @@ class Users extends CI_Controller
         $this->load->model('user_model', 'faskes');
 
         $this->faskes->update($id, $data);
-        return redirect(base_url('admin/users/'));
+        return redirect(base_url('index.php/admin/users/'));
     }
 
     public function edit()
@@ -47,6 +47,6 @@ class Users extends CI_Controller
         $_id = $this->input->get('id');
         $this->load->model('user_model', 'user');
         $this->user->delete($_id);
-        redirect(base_url('admin/users'));
+        redirect(base_url('index.php/admin/users'));
     }
 }

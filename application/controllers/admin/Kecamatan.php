@@ -36,7 +36,7 @@ class Kecamatan extends CI_Controller
         } else {
             $this->kecamatan->save($data);
         }
-        return redirect(base_url('admin/kecamatan/'));
+        return redirect(base_url('index.php/admin/kecamatan/'));
     }
 
     public function edit()
@@ -60,6 +60,6 @@ class Kecamatan extends CI_Controller
         $_id = $this->input->get('id');
         $this->load->model('Kecamatan_Model', 'kecamatan');
         $this->kecamatan->delete($_id);
-        redirect(base_url('admin/kecamatan'));
+        redirect(base_url('index.php/admin/kecamatan'));
     }
 }

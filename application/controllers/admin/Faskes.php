@@ -72,11 +72,11 @@ class Faskes extends CI_Controller
                 $data['foto3'] = $this->input->post('old_foto3');
             }
             $this->faskes->update($id, $data);
-            return redirect(base_url('admin/faskes/view?id=' . $id));
+            return redirect(base_url('index.php/admin/faskes/view?id=' . $id));
         }
 
         $this->faskes->save($data);
-        return redirect(base_url('admin/faskes/'));
+        return redirect(base_url('index.php/admin/faskes/'));
     }
 
     public function edit()
@@ -103,7 +103,7 @@ class Faskes extends CI_Controller
         $_id = $this->input->get('id');
         $this->load->model('Faskes_Model', 'faskes');
         $this->faskes->delete($_id);
-        redirect(base_url('admin/faskes'));
+        redirect(base_url('index.php/admin/faskes'));
     }
 
     private function upload_photo($field_name)
