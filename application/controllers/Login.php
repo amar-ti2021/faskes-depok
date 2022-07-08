@@ -31,7 +31,7 @@ class login extends CI_Controller
                 Username atau Password Anda Salah!
             </div>
             ');
-            redirect(base_url() . 'login?status=f');
+            redirect(base_url() . 'index.php/login?status=f');
         }
     }
     public function logout()
