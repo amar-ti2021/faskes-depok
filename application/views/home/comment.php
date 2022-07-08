@@ -74,7 +74,7 @@ if (!$this->session->has_userdata('USERNAME')) {
         <div class="row">
             <div class="col-12">
                 <div class="card card-primary">
-                    <?php echo form_open('index.php/home/addComment', ['action' => 'post']); ?>
+                    <?php echo form_open('home/addComment', ['action' => 'post']); ?>
                     <div class="card-header">
                         <h4 class="card-title">Komentar untuk <?= $faskes->nama; ?></h4>
                     </div>
