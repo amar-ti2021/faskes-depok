@@ -7,7 +7,7 @@
                 <p class="card-text"><?= $f->alamat; ?></p>
             </div>
             <div class="card-footer">
-                <a href="#" class="btn btn-primary">Detail</a>
+                <a href="<?= base_url('home/detail?id=') . $f->id; ?>" class="btn btn-primary">Detail</a>
             </div>
         </div>
     </div>
