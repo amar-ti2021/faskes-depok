@@ -341,7 +341,13 @@
   <div class="container">
     <div class="row">
 
-      
+      <div class="col-lg-3 col-md-6 footer-contact">
+        
+      </div>
+
+    </div>
+  </div>
+</div>
 
 <div class="container d-md-flex py-4">
 
