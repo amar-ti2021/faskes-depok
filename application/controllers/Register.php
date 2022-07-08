@@ -35,7 +35,7 @@ class register extends CI_Controller
                 Selamat registrasi berhasil! Silahkan Login
             </div>
             ');
-            redirect('index.php/login');
+            redirect('login');
         }
     }
 }
