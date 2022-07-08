@@ -62,7 +62,7 @@
 <body>
 
     <!-- ======= Header ======= -->
-    <header id="header" class="fixed-top" style="top:0;">
+    <header id="header" class="sticky-top" style="top:0;">
         <div class="container d-flex align-items-center">
 
             <h1 class="logo me-auto"><a href="<?= base_url('index.php/home'); ?>">Faskes-Depok</a></h1>
