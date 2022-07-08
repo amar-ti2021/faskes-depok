@@ -22,9 +22,9 @@ class login extends CI_Controller
             $this->session->set_userdata('ROLE', $row->role);
             $this->session->set_userdata('USER', $row);
             if ($this->session->userdata('ROLE') == 'administrator') {
-                redirect(base_url('admin/dashboard'));
+                redirect(base_url('index.php/admin/dashboard'));
             }
-            redirect(base_url() . 'home');
+            redirect(base_url() . 'index.php/home');
         } else {
             $this->session->set_flashdata('pesan', '
             <div class="alert alert-danger " role="alert">
@@ -39,6 +39,6 @@ class login extends CI_Controller
         $this->session->unset_userdata('USERNAME');
         $this->session->unset_userdata('ROLE');
         $this->session->unset_userdata('USER');
-        redirect(base_url() . 'home');
+        redirect(base_url() . 'index.php/home');
     }
 }
