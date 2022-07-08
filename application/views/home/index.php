@@ -84,6 +84,7 @@
                             </ul>
                         </li>
                 </ul>
+                <i class="bi bi-list mobile-nav-toggle"></i>
             </nav>
         <?php } else { ?>
             </ul>
@@ -91,7 +92,8 @@
             <a class="appointment-btn" href="<?= base_url('index.php/login'); ?>"><span class="d-none d-md-inline">Login</a>
         <?php } ?>
         </div>
-    </header><!-- End Header -->
+    </header>
+    <!-- End Header -->
 
     <!-- ======= Hero Section ======= -->
     <section id="hero" class="d-flex align-items-center">
