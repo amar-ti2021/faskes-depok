@@ -45,7 +45,7 @@ if (!$this->session->has_userdata('USERNAME')) {
     <header id="header" class="sticky-top" style="top:0;">
         <div class="container d-flex align-items-center">
 
-            <h1 class="logo me-auto"><a href="<?= base_url('/home'); ?>">Faskes-Depok</a></h1>
+            <h1 class="logo me-auto"><a href="<?= base_url('index.php/home'); ?>">Faskes-Depok</a></h1>
             <!-- Uncomment below if you prefer to use an image logo -->
             <!-- <a href="index.html" class="logo me-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
 
