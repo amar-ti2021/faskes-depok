@@ -9,7 +9,7 @@
 	                </div><!-- /.col -->
 	                <div class="col-sm-6">
 	                    <ol class="breadcrumb float-sm-right">
-	                        <li class="breadcrumb-item"><a href="<?= base_url('admin/dashboard') ?>">Admin</a></li>
+	                        <li class="breadcrumb-item"><a href="<?= base_url('index.php/admin/dashboard') ?>">Admin</a></li>
 	                        <li class="breadcrumb-item active">kecamatan</li>
 	                    </ol>
 	                </div><!-- /.col -->
@@ -29,7 +29,7 @@
 	                <div class="card-body">
 	                    <table id="example1" class="table table-bordered table-striped">
 
-	                        <a href="<?php echo base_url('admin/kecamatan/create') ?>" class="btn btn-success mb-3">Tambah Kecamatan</a>
+	                        <a href="<?php echo base_url('index.php/admin/kecamatan/create') ?>" class="btn btn-success mb-3">Tambah Kecamatan</a>
 
 	                        <thead>
 	                            <tr>

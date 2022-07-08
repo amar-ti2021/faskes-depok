@@ -24,7 +24,7 @@
                     <div class="card-header">
                         <h3 class="card-title">Tambah Jenis Faskes</h3>
                         <div class="card-tools">
-                            <a href="<?= base_url('admin/jenis_faskes'); ?>" type="button" class="btn btn-tool">
+                            <a href="<?= base_url('index.php/admin/jenis_faskes'); ?>" type="button" class="btn btn-tool">
                                 <i class="fas fa-arrow-left"></i>
                                 Kembali
                             </a>

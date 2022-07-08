@@ -24,7 +24,7 @@
           <div class="card-header">
             <h3 class="card-title">Edit Data <?= $user->username; ?></h3>
             <div class="card-tools">
-              <a href="<?= base_url('admin/faskes'); ?>" type="button" class="btn btn-tool">
+              <a href="<?= base_url('index.php/admin/faskes'); ?>" type="button" class="btn btn-tool">
                 <i class="fas fa-arrow-left"></i>
                 Kembali
               </a>
